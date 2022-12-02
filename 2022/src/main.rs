@@ -3,6 +3,7 @@ use std::{fs, path::PathBuf};
 use clap::Parser;
 
 mod day1;
+mod day2;
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -28,12 +29,21 @@ fn main() {
 
     let result = match args.day {
         1 => match args.part {
-            1 => day1::calorie_counter_part1(file),
-            2 => day1::calorie_counter_part2(file),
-            _ => String::from("Wrong puzzlec"),
+            1 => day1::calorie_counter_part_1(file),
+            2 => day1::calorie_counter_part_2(file),
+            _ => wrong_part(),
+        },
+        2 => match args.part {
+            1 => day2::rock_paper_scissors_part_1(file),
+            2 => day2::rock_paper_scissors_part_2(file),
+            _ => wrong_part(),
         },
         _ => String::from("Wrong day"),
     };
 
     println!("{}", result);
+}
+
+fn wrong_part() -> String {
+    String::from("Wrong part!")
 }

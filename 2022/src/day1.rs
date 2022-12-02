@@ -1,8 +1,8 @@
-pub fn calorie_counter_part1(input: String) -> String {
+pub fn calorie_counter_part_1(input: String) -> String {
     count_carried(input).iter().max().unwrap().to_string()
 }
 
-pub fn calorie_counter_part2(input: String) -> String {
+pub fn calorie_counter_part_2(input: String) -> String {
     count_carried(input)
         .into_iter()
         .fold([0; 3], |mut acc, num| {
