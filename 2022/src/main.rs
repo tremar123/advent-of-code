@@ -4,6 +4,7 @@ use clap::Parser;
 
 mod day1;
 mod day2;
+mod day3;
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -36,6 +37,11 @@ fn main() {
         2 => match args.part {
             1 => day2::rock_paper_scissors_part_1(file),
             2 => day2::rock_paper_scissors_part_2(file),
+            _ => wrong_part(),
+        },
+        3 => match args.part {
+            1 => day3::rucksack_reorganization_part_1(file),
+            2 => day3::rucksack_reorganization_part_2(file),
             _ => wrong_part(),
         },
         _ => String::from("Wrong day"),
