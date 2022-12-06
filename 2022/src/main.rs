@@ -6,6 +6,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -53,6 +54,11 @@ fn main() {
         5 => match args.part {
             1 => day5::supply_stack_part_1(file),
             2 => day5::supply_stack_part_2(file),
+            _ => wrong_part(),
+        },
+        6 => match args.part {
+            1 => day6::tuning_trouble_part_1(file),
+            2 => day6::tuning_trouble_part_2(file),
             _ => wrong_part(),
         },
         _ => String::from("Wrong day"),
