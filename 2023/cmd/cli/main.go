@@ -60,15 +60,15 @@ func main() {
 		}
 	case 5:
 		if *part == 1 {
-			panic("unimplemented")
+            output = solutions.Day5Part1(input)
 		} else {
-			panic("unimplemented")
+            output = solutions.Day5Part2Parallel(input)
 		}
 	case 6:
 		if *part == 1 {
-			panic("unimplemented")
+            output = solutions.Day6Part1(input)
 		} else {
-			panic("unimplemented")
+            output = solutions.Day6Part2(input)
 		}
 	case 7:
 		if *part == 1 {
