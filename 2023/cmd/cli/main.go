@@ -48,39 +48,39 @@ func main() {
 		}
 	case 3:
 		if *part == 1 {
-            output = solutions.Day3Part1(input)
+			output = solutions.Day3Part1(input)
 		} else {
-            output = solutions.Day3Part2(input)
+			output = solutions.Day3Part2(input)
 		}
 	case 4:
 		if *part == 1 {
-            output = solutions.Day4Part1(input)
+			output = solutions.Day4Part1(input)
 		} else {
-            output = solutions.Day4Part2(input)
+			output = solutions.Day4Part2(input)
 		}
 	case 5:
 		if *part == 1 {
-            output = solutions.Day5Part1(input)
+			output = solutions.Day5Part1(input)
 		} else {
-            output = solutions.Day5Part2Parallel(input)
+			output = solutions.Day5Part2Parallel(input)
 		}
 	case 6:
 		if *part == 1 {
-            output = solutions.Day6Part1(input)
+			output = solutions.Day6Part1(input)
 		} else {
-            output = solutions.Day6Part2(input)
+			output = solutions.Day6Part2(input)
 		}
 	case 7:
 		if *part == 1 {
-			panic("unimplemented")
+			output = solutions.Day7Part1(input)
 		} else {
-			panic("unimplemented")
+			output = solutions.Day7Part2(input)
 		}
 	case 8:
 		if *part == 1 {
-			panic("unimplemented")
+			output = solutions.Day8Part1(input)
 		} else {
-			panic("unimplemented")
+			output = solutions.Day8Part2(input)
 		}
 	case 9:
 		if *part == 1 {
