@@ -90,7 +90,7 @@ func main() {
 		}
 	case 10:
 		if *part == 1 {
-			panic("unimplemented")
+			output = solutions.Day10Part1(input)
 		} else {
 			panic("unimplemented")
 		}
